@@ -11,9 +11,11 @@ export const SignUp = (props) => {
 
         const response = await fetch('https://backend-hazel-two.vercel.app/api/auth/createuser', {
             method: "POST",
+             mode: 'no-cors',
             headers: {
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*"
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "OPTIONS,POST,GET,PATCH"
             },
             body: JSON.stringify({ name, email, password }),
         });
