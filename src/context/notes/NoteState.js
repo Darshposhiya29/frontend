@@ -14,6 +14,7 @@ const NoteState = (props) => {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
                 "auth-token": localStorage.getItem('token')
             },
         });
