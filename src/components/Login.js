@@ -8,7 +8,7 @@ export const Login = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch('http://localhost:5000https://backend-hazel-two.vercel.app/api/auth/login', {
+        const response = await fetch('https://backend-hazel-two.vercel.app/api/auth/login', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
